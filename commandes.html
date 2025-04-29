@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commander - Sweet Boulangerie</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-100 text-base-content">
+  <header class="navbar bg-base-200 px-4">
+    <a class="text-2xl font-bold text-orange-600">Sweet Boulangerie</a>
+    <div class="ml-auto">
+      <a href="Boulangerie.html" class="btn btn-ghost">Accueil</a>
+      <a href="produits.html" class="btn btn-ghost">Toute la gamme</a>
+    </div>
+  </header>
+
+  <main class="max-w-xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-6 text-center">Formulaire de commande</h1>
+    <form class="space-y-4">
+      <div>
+        <label class="label"><span class="label-text">Nom complet</span></label>
+        <input type="text" class="input input-bordered w-full" placeholder="Omar Thiam" required />
+      </div>
+      <div>
+        <label class="label"><span class="label-text">Produit</span></label>
+        <select class="select select-bordered w-full" required>
+          <option disabled selected>Choisir un produit</option>
+          <option>Croissant</option>
+          <option>Baguette</option>
+          <option>Pain au chocolat</option>
+        </select>
+      </div>
+      <div>
+        <label class="label"><span class="label-text">Quantité</span></label>
+        <input type="number" class="input input-bordered w-full" min="1" value="1" />
+      </div>
+      <div>
+        <label class="label"><span class="label-text">Téléphone</span></label>
+        <input type="tel" class="input input-bordered w-full" placeholder="77 123 45 67" required />
+      </div>
+      <div>
+        <label class="label"><span class="label-text">Adresse de livraison</span></label>
+        <textarea class="textarea textarea-bordered w-full" placeholder="Rue, quartier, ville..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-full mt-4">Valider la commande</button>
+    </form>
+  </main>
+</body>
+</html>
